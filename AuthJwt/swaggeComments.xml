@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AuthJwt</name>
+    </assembly>
+    <members>
+        <member name="M:AuthJwt.Controllers.AuthController.resetPassword(System.String,System.String,System.String)">
+            <summary>
+            it is simple way to reset password. if using it then no need to send token to email and verification.
+            </summary>
+            <param name="UserName"></param>
+            <param name="OldPassword"></param>
+            <param name="NewPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthJwt.Controllers.AuthController.sendResetPasswordToken(System.String)">
+            <summary>
+            it is email token verification way to reset password. if using it then need to send token to email and verification.
+            </summary>
+        </member>
+        <member name="T:AuthJwt.Migrations.init">
+            <inheritdoc />
+        </member>
+        <member name="M:AuthJwt.Migrations.init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:AuthJwt.Migrations.init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:AuthJwt.Migrations.init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
