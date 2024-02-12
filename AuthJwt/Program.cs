@@ -106,6 +106,9 @@ builder.Services.AddAuthorization(op =>
        
      
     });
+    
+    //we also can use RequireAssertion method for above role and claims logic.
+    //In RequireAssertion we can write our own logic for authorization.
     op.AddPolicy("UbaidPolicy2", policy =>
     {
         policy.AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme);
